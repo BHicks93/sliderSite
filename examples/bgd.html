@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Hicks Designs</title>
+	<meta name="author" content="Brian Hicks" />
+	<meta name="description" content="Graphic Design student at then Rhode Island School of Design." />
+	<meta name="keywords"  content="design,graphic,graphicdesign,brian,hicks,brianhicks,risd, rhode island school of design" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	img {max-height: 500px; max-width: 700px;}
+	.section h2 {
+		font-size: 24px;
+		color:white;
+		padding:10px;
+		margin-left: -10px;
+		color:#4bbfc3;
+	}
+	.intro p {
+		color: #fff;
+	}
+	.section p {
+		font-size: 18px;
+		color:#4bbfc3;
+		padding:10px;
+		margin-left: 250px;
+		margin-right: 250px;
+	}
+	.descriptionContainer{
+	}
+	.slide1 img {
+		margin-left: 100px;
+		}
+	.fp-controlArrow, .fp-prev, .fp-next{z-index: 9; color: #000;}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Defining each section background and styles
+	* --------------------------------------- 
+	#section0, #section1, #section2, #section3{
+		background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+		background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+		background: linear-gradient(#4BBFC3,#7BAABE);
+	}
+
+
+
+ 	/*Adding background for the slides
+	* --------------------------------------- 
+	#slide1{
+		background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+		background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+		background: linear-gradient(#4BBFC3,#7BAABE);
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+		/* Fixed header and footer.
+	* --------------------------------------- */
+	#header, #footer{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background: #FFF;
+		z-index:9;
+		text-align:center;
+		color: #000;
+		padding: 20px 0 0 0;
+	}
+	#leftArrow, #rightArrow{position:fixed;top:50%;z-index:2;color: #FFF;}
+	#leftArrow{left:90px;padding: 0 20px 0 0;}
+	#rightArrow{right:90px;padding: 0 20px 0 0;
+		-webkit-transform:rotate(180deg);}
+	#footer{
+		bottom:0px;
+		color: #999;
+	}
+		
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				menu: '#menu',
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage','6thPage', '7thPage', '8thPage', '9thPage', '10thPage', '11thPage', '12thPage', '13thPage', '14thPage', '15thPage'],
+				sectionsColor: ['#fff', '#000', '#fff', '#000', '#fff', '#000', '#fff', '#000', '#fff', '#000', '#fff', '#000', '#fff', '#000', '#fff'],
+				autoScrolling: true
+			});
+		});
+	</script>
+</head>
+<body>
+
+
+<div id="footer">
+	<div id="name">Brian Hicks © 2015</div>
+</div>
+<div id="menuBar"></div>
+<div id="rightBar"></div>
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">•<ul><li>Rio de Janeiro</li></ul></a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">•<ul><li>Blend Tool Book</li></ul></a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">•<ul><li>Nike & Lissitzky</li></ul></a></li>
+	<li data-menuanchor="4thPage"><a href="#4thPage">•<ul><li>Consumerism Poster Series</li></ul></a></li>
+	<li data-menuanchor="5thPage"><a href="#5thPage">•<ul><li>risd.gd</li></ul></a></li>
+	<li data-menuanchor="6thPage"><a href="#6thPage">•<ul><li>synergy.rocks</li></ul></a></li>
+	<li data-menuanchor="7thPage"><a href="#7thPage">•<ul><li>Typography Posters</li></ul></a></li>
+	<li data-menuanchor="8thPage"><a href="#8thPage">•<ul><li>RISD Cycling Calendar</li></ul></a></li>
+	<li data-menuanchor="9thPage"><a href="#9thPage">•<ul><li>Calvino Compositions</li></ul></a></li>
+	<li data-menuanchor="10thPage"><a href="#10thPage">•<ul><li>Posters</li></ul></a></li>
+	<li data-menuanchor="11thPage"><a href="#11thPage">•<ul><li>Cheap - Installation</li></ul></a></li>
+	<li data-menuanchor="12thPage"><a href="#12thPage">•<ul><li>Kauffer Timeline</li></ul></a></li>
+	<li data-menuanchor="13thPage"><a href="#13thPage">•<ul><li>Guggenheim Promotional Kit</li></ul></a></li>
+	<!--<li data-menuanchor="14thPage"><a href="#14thPage">•<ul><li>Screen Prints</li></ul></a></li>
+	<li data-menuanchor="15thPage"><a href="#15thPage">•<ul><li>Video</li></ul></a></li>-->
+</ul>
+
+
+<div id="fullpage">
+	<div class="section" id="section0">
+		<div class="slide" id="slide1">
+			<img src="http://40.media.tumblr.com/ab30c061b816db08a4f2648d7c4acf12/tumblr_niw7tqxp6P1u9vx3io1_r1_1280.jpg" height="484px" width="630px">
+		</div>
+			<div class="slide" id="slide2">
+				<div class="descriptionContainer">
+				<h2>Rio de Janeiro</h2>
+					<p>Developed an identity system for the World Heratage Site Rio de Janeiro. Started by developing a mark then selected and applied typefaces and colors.</p>
+				</div>
+			</div>
+			<div class="slide" id="slide3">
+				<img src="http://41.media.tumblr.com/69ba882250b89f584791bf43bd4be838/tumblr_nlyj7sdjEK1u9vx3io6_1280.png">
+			</div>
+			<div class="slide" id="slide4">
+				<img src="http://41.media.tumblr.com/fd52f50b54917c4ed84f1b65ce21d094/tumblr_niw7tqxp6P1u9vx3io8_r1_1280.jpg" >
+			</div>
+			<div class="slide" id="slide5">
+				<img src="http://40.media.tumblr.com/53cc043a98d989ecb3f666b20c496b28/tumblr_niw7tqxp6P1u9vx3io7_r1_1280.jpg" >
+			</div>
+			<div class="slide" id="slide6">
+				<img src="http://41.media.tumblr.com/cdeb0724b70c12d0b5732ae00147e3d5/tumblr_niw7tqxp6P1u9vx3io9_r1_1280.jpg" >
+			</div>
+			<div class="slide" id="slide7">
+				<img src="http://36.media.tumblr.com/51312994f7ec6ea4f34ad5b4cbe06204/tumblr_niw7tqxp6P1u9vx3io10_r1_1280.jpg" >
+			</div>
+			<div class="slide" id="slide8">
+				<img src="http://40.media.tumblr.com/7183632b03afd7c080fe807678599d9f/tumblr_niw7tqxp6P1u9vx3io4_r1_1280.jpg" >
+			</div>
+			<div class="slide" id="slide9">
+				<img src="http://41.media.tumblr.com/c01929470a49d8cd82ce35fcbf1c4a22/tumblr_niw7tqxp6P1u9vx3io5_1280.jpg" >
+			</div>
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
+	    	<img src="http://40.media.tumblr.com/06674886e405851b861852bf396de6f4/tumblr_niuz0fLIqe1u9vx3io1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>Blend Tool</h2>
+	    			<p>An investigation into the history of Illustrator's blend tool how it came to be and how it now influences what we create.</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3">
+	    	<img src="http://36.media.tumblr.com/14fa8e5a396bec9c9ae52064211bb115/tumblr_niuz0fLIqe1u9vx3io2_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="http://40.media.tumblr.com/a29251cd25354de8a3d6c2e1617926c1/tumblr_niuz0fLIqe1u9vx3io3_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="http://40.media.tumblr.com/25d75dfdf953065cac82a792b2133057/tumblr_niuz0fLIqe1u9vx3io4_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide5">
+	    	<img src="http://36.media.tumblr.com/efce1ea13a586ced0e488832b79d6a03/tumblr_niuz0fLIqe1u9vx3io5_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide6">
+	    	<img src="http://40.media.tumblr.com/6ec5359caa0fb6144c66fd8420336d11/tumblr_niuz0fLIqe1u9vx3io6_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide7">
+	    	<img src="http://40.media.tumblr.com/676215fda598c1c782efa6d8dcc3d951/tumblr_niuz0fLIqe1u9vx3io7_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide7">
+	    	<img src="http://41.media.tumblr.com/27e886c81c99b0643bb0ad83ccecf8e9/tumblr_niuz0fLIqe1u9vx3io8_1280.jpg">
+	    </div>
+	</div>
+	<div class="section" id="section2">
+		<div class="slide" id="slide1">
+	    	<a href="#section0"><img src="http://36.media.tumblr.com/f32c2fc7b283d8758d7e2c66044ee797/tumblr_niuyk666pY1u9vx3io4_r1_1280.jpg"></a>
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>Nike & Lissitzky</h2>
+			    	<p>A compairson between Nike Sneakers and El Lissitzky. Book features multiple kinds of paper and a unique binding method.</p>
+			</div>
+		</div>
+		 <div class="slide" id="slide3">
+	    	<img src="http://40.media.tumblr.com/6586e20dcbd7cf909a612a2431e5027d/tumblr_niuyk666pY1u9vx3io2_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="http://41.media.tumblr.com/026d8f889a7dc6dc0686ea598382b6b6/tumblr_niuyk666pY1u9vx3io1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide5">
+	    	<img src="http://40.media.tumblr.com/f0603c261c707aaca1fa391521a5c978/tumblr_niuyk666pY1u9vx3io3_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide6">
+	    	<img src="http://36.media.tumblr.com/3acb20cb82fec35b66d70f82083c611a/tumblr_niuyk666pY1u9vx3io5_r1_1280.jpg">
+	    </div>
+	</div>
+	<div class="section" id="section3">
+		<div class="slide" id="slide1">
+	    	<img src="http://40.media.tumblr.com/b32444ffe483bc080c8f61567bcc6cb7/tumblr_niuzpiAFTb1u9vx3io5_r1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>Consumerism Poster Series</h2>
+			    	<p>Poster’s made in collaboration with Will Urmston on consumerism and discount culture. Used colors, signs, and signals utilized by advertisers to produce a different message.</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3">
+	    	<img src="http://40.media.tumblr.com/848b539b0a8d24703f77f8c4263dd25c/tumblr_niuzpiAFTb1u9vx3io3_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="http://40.media.tumblr.com/63d803135115b2b311eb7bde969705c4/tumblr_niuzpiAFTb1u9vx3io1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide5">
+	    	<img src="http://40.media.tumblr.com/89509f32d8d7b9680d751ff16042ec04/tumblr_niuzpiAFTb1u9vx3io2_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide6">
+	    	<img src="http://40.media.tumblr.com/c210de29ff6bb5611e6b26f7d24fa7d2/tumblr_niuzpiAFTb1u9vx3io4_r2_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide7">
+	    	<img src="http://40.media.tumblr.com/b9647574c9f033cc7066d9c571fe880a/tumblr_niuzpiAFTb1u9vx3io6_r1_1280.jpg">
+	    </div>
+	</div>
+	<div class="section" id="section4">
+		<div class="slide" id="slide1">
+	    	<img src="http://41.media.tumblr.com/48eb05400825abf2b1284dfe6274ef5a/tumblr_nk3de3fdpt1u9vx3io1_r1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>risd.gd</h2>
+			    	<p>Designed and developed the RISD Graphic Design department website along side James Chae, Chloe Scheffe, and John Caserta.</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3">
+	    	<img src="http://40.media.tumblr.com/cde17e5eed3a999f1b41dbc855e65be9/tumblr_nk3de3fdpt1u9vx3io2_r1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="http://41.media.tumblr.com/53f89c5e9c4205c64d3636bc0950362c/tumblr_nk3de3fdpt1u9vx3io3_r1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide5">
+	    	<img src="http://41.media.tumblr.com/7c57248512a0af61e714c3ffa398a5d5/tumblr_nk3de3fdpt1u9vx3io4_r1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide6">
+	    	<img src="http://40.media.tumblr.com/95493b3a9c0ed6ef0ac7782fed02c8d5/tumblr_nk3de3fdpt1u9vx3io5_r1_1280.jpg">
+	    </div>
+	</div>
+	<div class="section" id="section5">
+		<div class="slide" id="slide1">
+	    	<img src="http://41.media.tumblr.com/18aa400156ee2d1ea57b594d193a4998/tumblr_niuzyrTWbO1u9vx3io1_r1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>synergy.rocks</h2>
+			    	<p>Website that randomly generates start ups using the generic visual language of Silicon Valley. Created for a weekend workshop in colaboration with some awesome friends. Visit synergy.rocks</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3">
+	    	<img src="http://40.media.tumblr.com/e5ced03879bc96c221dc9aa540311c9a/tumblr_niuzyrTWbO1u9vx3io3_r1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="http://40.media.tumblr.com/b2a08ff9e224eff0301a29c05b603e10/tumblr_niuzyrTWbO1u9vx3io6_r1_1280.jpg">
+	    </div>
+	</div>
+	<div class="section" id="section6">
+		<div class="slide" id="slide1">
+	    	<img src="https://36.media.tumblr.com/3b92ac232754b029765a237731d3862c/tumblr_niuz7oqdw81u9vx3io1_1280.png">
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>Typography Posters</h2>
+			    	<p>description</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3">
+	    	<img src="https://36.media.tumblr.com/a01c4ff2c0820e58ba8feded06e76d32/tumblr_niuz2e5kX21u9vx3io2_1280.png">
+	    	<img src="https://40.media.tumblr.com/06deac3f1234e44c65d33fc69c7904c0/tumblr_niuz2e5kX21u9vx3io1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="https://36.media.tumblr.com/c0bbfa5cc7a2fdde6ba9dbcc4dbeaf78/tumblr_niuz2e5kX21u9vx3io4_r1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide5">
+	    	<img src="https://41.media.tumblr.com/e1b20df708ab00a749fae6496a03b800/tumblr_niuz2e5kX21u9vx3io3_r1_1280.jpg">
+	    </div>
+	</div>
+	<div class="section" id="section7">
+		<div class="slide" id="slide1">
+	    	<img src="https://40.media.tumblr.com/80929e225cca11e9a9593acb4110181d/tumblr_niw81p3Boi1u9vx3io2_r1_540.jpg">
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>2015 RISD Cycling Calendar</h2>
+			    	<p>Promotional material for RISD cycling team. Worked with photographer to capture an honest representation of teams energy. Designed a calendar which relates to team uniform, branding and image.</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3">
+	    	<img src="https://41.media.tumblr.com/1550470035d1ca31b32f79fa2ebfedff/tumblr_niw81p3Boi1u9vx3io6_r1_1280.jpg">
+	    	<img src="https://36.media.tumblr.com/3341caf955337be63e51f3bafd947911/tumblr_niw81p3Boi1u9vx3io3_r1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="https://41.media.tumblr.com/3f6846f8c6ed11ceaad8f1b1613e6065/tumblr_niw81p3Boi1u9vx3io5_r1_1280.jpg">
+	    	<img src="https://40.media.tumblr.com/d296fa5623e34a79c96fef304686fb7a/tumblr_niw81p3Boi1u9vx3io4_r1_1280.jpg">
+	    </div>
+	</div>
+	<div class="section" id="section8">
+		<div class="slide" id="slide1">
+	    	<img src="https://41.media.tumblr.com/88576d70b09a19e359937b17ec94abb4/tumblr_niuz6eUiUr1u9vx3io6_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>Calvino Compositions</h2>
+			    	<p>Typographic studies based off of the chapter, Multiplicity, in Italo Calvino’s Six Memos for the Next Generation.</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3">
+	    	<img src="https://36.media.tumblr.com/da872d1d17c61551571c5311f25b1642/tumblr_niuz6eUiUr1u9vx3io1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="https://40.media.tumblr.com/6e3d7b7d5d0558c0fd48e4d812fa8f73/tumblr_niuz6eUiUr1u9vx3io7_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide5">
+	    	<img src="https://41.media.tumblr.com/4873c70be4e578033098dbcdd47dc311/tumblr_niuz6eUiUr1u9vx3io3_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide6">
+	    	<img src="https://36.media.tumblr.com/65ce3f466da6246e149c76cb87a94f99/tumblr_niuz6eUiUr1u9vx3io5_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide7">
+	    	<img src="https://41.media.tumblr.com/158daad4a51333845d4348e59078058a/tumblr_niuz6eUiUr1u9vx3io2_r1_1280.jpg">
+	    </div>
+	</div>
+	<div class="section" id="section9">
+		<div class="slide" id="slide1">
+	    	<img src="https://41.media.tumblr.com/d568555a070b1cc75181c8c0fcb36a8f/tumblr_niuzwd444Y1u9vx3io1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>Cheap</h2>
+			    	<p>An installation created in response to the film Fast, Cheap, and Out of Control. </p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3">
+	    	<img src="https://41.media.tumblr.com/f0533b4b589b2642ab75d55307d9d188/tumblr_niuzwd444Y1u9vx3io4_r1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="https://40.media.tumblr.com/8be61059255297f8aa4f1ad73e99fd25/tumblr_niuzwd444Y1u9vx3io3_r1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide5">
+	    	<img src="https://41.media.tumblr.com/93f989b41f1819ef622fc532494d3695/tumblr_niuzwd444Y1u9vx3io2_r1_1280.jpg">
+	    </div>
+	</div>
+	<div class="section" id="section10">
+		<div class="slide" id="slide1">
+	    	<img src="http://41.media.tumblr.com/f08a76aaf8f50c8683eb3a91948fdd06/tumblr_niuyt9JiPk1u9vx3io2_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>Posters</h2>
+			    	<p>Various posters ranging from personal explorations to lecture series.</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3">
+	    	<img src="https://40.media.tumblr.com/f715dd7b4cf1b1be9b50610fcfa827fe/tumblr_niuyo5phJg1u9vx3io1_1280.jpg">
+	    	<img src="https://40.media.tumblr.com/88c7fc2148e9286f8741f12191d262df/tumblr_niuyo5phJg1u9vx3io2_1280.jpg">
+	    	<img src="https://36.media.tumblr.com/d7966e69aaa9caf92c2e6bae7c6afc77/tumblr_niuyo5phJg1u9vx3io3_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="http://40.media.tumblr.com/03fc4d0ea5719863453aad8c6117ec1f/tumblr_niuyt9JiPk1u9vx3io4_r1_1280.png">
+	    </div>
+	    <div class="slide" id="slide5">
+	    	<img src="http://40.media.tumblr.com/7d7f484fa053f3eba47c9ef51569f49e/tumblr_niuyt9JiPk1u9vx3io3_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide6">
+	    	<img src="http://40.media.tumblr.com/742abad308a13f370bbe437649fadd91/tumblr_niuyt9JiPk1u9vx3io1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide7">
+	    	<img src="https://40.media.tumblr.com/c848c52d850e648d3271b05a4ed652d7/tumblr_niuymoAgSa1u9vx3io1_1280.jpg">
+	    	<img src="https://41.media.tumblr.com/483752a5cd09ae6c59d62cc32349f16a/tumblr_niuymoAgSa1u9vx3io3_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide7">
+	    	<img src="https://40.media.tumblr.com/7d960cb6e58899ba5ccdc7e8b06b8949/tumblr_niuymoAgSa1u9vx3io2_1280.jpg">
+	    </div>
+	</div>
+	<div class="section" id="section11">
+		<div class="slide" id="slide1">
+	    	<img src="https://41.media.tumblr.com/d241287e1f945e86257d04a245f61246/tumblr_nlykyh3awt1u9vx3io1_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>E. M. Kauffer Timeline</h2>
+			    	<p>description</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3">
+	    	<img src="https://40.media.tumblr.com/5f00a0fdec4eb19a0ddbfe5312b2a47f/tumblr_nlykyh3awt1u9vx3io2_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="https://41.media.tumblr.com/baccda753b8ea999fce4726e17d6f16a/tumblr_nlykyh3awt1u9vx3io3_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide5">
+	    	<img src="https://36.media.tumblr.com/e7c4284765162a3b203c208db67e7315/tumblr_nlykyh3awt1u9vx3io4_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide6">
+	    	<img src="https://36.media.tumblr.com/baa2c2f1f7a8f332c72c48ba58468ae5/tumblr_nlykyh3awt1u9vx3io5_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide7">
+	    	<img src="https://41.media.tumblr.com/7c9e0bed37846ff5d1c186531f2757f1/tumblr_nlykyh3awt1u9vx3io6_1280.jpg">
+	    </div>
+	</div>
+	<div class="section" id="section12">
+		<div class="slide" id="slide1">
+	    	<img src="https://41.media.tumblr.com/c5da5bdefaae350296510b5824316613/tumblr_nlylb0nxfJ1u9vx3io2_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>Guggenheim Promotional Kit</h2>
+			    	<p>description</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3">
+	    	<img src="https://40.media.tumblr.com/7c543cd96053fba7ca3a885b61e454ee/tumblr_nlylb0nxfJ1u9vx3io4_1280.jpg">
+	    	<img src="https://40.media.tumblr.com/bc8d00f516a5ebb593b30796871bd0fb/tumblr_nlylb0nxfJ1u9vx3io5_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="https://40.media.tumblr.com/41be11fbe2ff1c425702f15d8c666366/tumblr_nlylb0nxfJ1u9vx3io3_1280.jpg">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="https://40.media.tumblr.com/0ee4947d6499bb48733521ae365975a4/tumblr_nlylb0nxfJ1u9vx3io1_1280.jpg">
+	    </div>
+	</div>
+	<!--<div class="section" id="section13">
+		<div class="slide" id="slide1">
+	    	<img src="" height="484px" width="336px">
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>Title</h2>
+			    	<p>description</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3">
+	    	<img src="" height="484px" width="303px">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="" height="484px" width="630px">
+	    </div>
+	</div>
+	<div class="section" id="section14">
+		<div class="slide" id="slide1">
+	    	<img src="" height="484px" width="336px">
+	    </div>
+	    <div class="slide" id="slide2">
+	    	<div class="descriptionContainer">
+	    		<h2>Title</h2>
+			    	<p>description</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3">
+	    	<img src="" height="484px" width="303px">
+	    </div>
+	    <div class="slide" id="slide4">
+	    	<img src="" height="484px" width="630px">
+	    </div>
+	</div>-->
+</div>
+
+<script>
+	$('a[href^="#"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
+
+</script>
+</body>
+</html>
